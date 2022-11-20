@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio With Tailwind CSS</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 px-2 py-2">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-2xl text-like py-6">Rinka</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[270px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Home</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">About me</a>
+                </li>
+                <li class="group">
+                  <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Portofolio</a>
+                </li>
+                <li class="group">
+                  <a href="#language" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Language</a>
+                </li>
+                <li class="group">
+                  <a href="#galery" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Galery</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- emd -->
+    <!-- Main Section -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-like md:text-xl">Halo Semua 👌 Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-4xl">Rinka</span></h1>
+            <h2 class="font-medium text-slate-500 first-letter text-lg mb-5 lg:text-2xl">Junior Web Developer | Vocational HighSchool Student</h2>
+            <p class="font-medium text-slate-400 mb-10 leading-relaxed">This is just a Tailwind css,and in this website just bunch of tailwind utilities</p>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="text-base text-white font-semibold bg-like py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition duration-300 ease-in-out">Do Not Click</a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-0 lg:right-0">
+              <img src="dist/img/rinka1.png" alt="" class="max-w-full mx-auto" />
+              <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#FF0066"
+                    d="M46.6,-55.6C61.4,-43,75.3,-29.4,81.2,-12C87.1,5.4,84.9,26.6,73.7,39.3C62.5,52,42.3,56.3,23.2,63C4,69.7,-14,78.9,-28.4,74.9C-42.8,71,-53.5,54.1,-59.6,37.4C-65.7,20.7,-67,4.3,-65.3,-12.5C-63.5,-29.4,-58.7,-46.8,-47.3,-60C-35.9,-73.2,-17.9,-82.2,-1,-81C15.8,-79.7,31.7,-68.2,46.6,-55.6Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- about -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-9 lg:w-1/2">
+            <h4 class="font-bold uppercase text-like mb-3">About Me</h4>
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Come Learn Tailwind css</h2>
+            <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe fugiat est magnam dolorum repudiandae tempore.</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-9">Social Media</h3>
+            <p class="font-medium text-base text-slate-500 mb-4 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nobis sapiente labore perspiciatis iste dignissimos quasi quas expedita laborum! Expedita?</p>
+            <div class="flex items-center">
+              <!-- github -->
+              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+                <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!-- instagram -->
+              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+                <svg width="20" class="fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <!-- steam -->
+              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Steam</title>
+                  <path
+                    d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"
+                  /></svg></a
+              >\
+              <!-- youtube -->
+              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- portofolio -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto mb-16 text-center">
+            <h4 class="font-semibold text-lg mb-2 text-like">Portofolio</h4>
+            <h2 class="font-semibold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Lastest Project</h2>
+            <p class="font-medium text-md text-slate-400 md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis quod velit molestiae, expedita nemo?</p>
+          </div>
+        </div>
+        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/dist/img/Screenshot_59.jpg" alt="" width="100%" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha Landing Page</h3>
+            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/dist/img/Screenshot_1.jpg" alt="" width="100%" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha Posts Page</h3>
+            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/dist/img/Screenshot_2.jpg" alt="" width="100%" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha dashbard page</h3>
+            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="/dist/img/Screenshot_3.jpg" alt="" width="100%" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha single post page</h3>
+            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- language -->
+    <section id="language" class="bg-slate-800 pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-lg font-semibold text-like">Language</h4>
+            <h2 class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Language and framwork That i have use</h2>
+            <p class="text-md font-medium text-slate-400 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit facilis velit!</p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/1200px-Laravel.svg.png" alt="" />
+            </a>
+            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/PHP-logo.svg.png" alt="" />
+            </a>
+            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/Unofficial_JavaScript_logo_2.svg.png" alt="" />
+            </a>
+            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+              <img src="dist/img/Tailwind_CSS_Logo.svg.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- galery -->
+    <section id="galery" class="pt-36 pb-32 bg-slate-300">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto mb-16 text-center">
+            <h4 class="font-semibold text-lg mb-2 text-like">Galery</h4>
+            <h2 class="font-semibold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Galery</h2>
+            <p class="font-medium text-md text-slate-400 md:text-lg">Lorem ipsum ipsum ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis quod velit molestiae, expedita nemo?</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/1280x720?gaming" alt="" class="w-full" />
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/1280x720?computer" alt="" class="w-full" />
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/1280x720?programming" alt="" class="w-full" />
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/1280x720?web" alt="" class="w-full" />
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/1280x720?cat" alt="" class="w-full" />
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <img src="https://source.unsplash.com/1280x720?cartoon" alt="" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- footer -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
+            <h2 class="font-bold text-4xl text-white mb-6">Home</h2>
+            <h3 class="font-bold text-2xl mb-2">Contack me</h3>
+            <p>alfathizhaaaaaaa@gmail.com</p>
+            <p>JL.Ga Manulang Paldalarang</p>
+            <p>Bandung</p>
+          </div>
+
+          <div class="w-full px-4 mb-12 md:w-1/2">
+            <h3 class="font-semibold text-xl text-white mb-5">Random Stuff</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#" class="inline-block text-base hover:text-like mb-4">Gaming</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base hover:text-like mb-4">Coding</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base hover:text-like mb-4">Anime & Manga</a>
+              </li>
+              <li>
+                <a href="#" class="inline-block text-base hover:text-like mb-4">Cats</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-700"></div>
+        <div class="flex items-center justify-center mb-5">
+          <!-- github -->
+          <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+            <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>GitHub</title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+          <!-- instagram -->
+          <a href="https://www.instagram.com/person12506/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+            <svg width="20" class="fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+              />
+            </svg>
+          </a>
+          <!-- steam -->
+          <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Steam</title>
+              <path
+                d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"
+              /></svg></a
+          >\
+          <!-- youtube -->
+          <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>YouTube</title>
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+              /></svg
+          ></a>
+        </div>
+        <p class="font-medium text-xs text-slate-400 text-center">
+          Create by <a href="https://www.instagram.com/person12506/" class="font-bold text-like">Alfath Izha Barikallah</a>,with <a class="text-bold text-sky-500" href="https://tailwindcss.com" target="_blank">Tailwind Css </a>
+        </p>
+      </div>
+    </footer>
+    <!-- end -->
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
