@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,35 +9,35 @@
   </head>
   <body>
     <!-- header -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 px-2 py-2">
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent px-2 py-2">
       <div class="container">
-        <div class="flex items-center justify-between relative">
+        <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="font-bold text-2xl text-like py-6">Rinka</a>
+            <a href="#home" class="py-6 text-2xl font-bold text-like">Rinka</a>
           </div>
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
               <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
             </button>
 
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[270px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <nav id="nav-menu" class="absolute right-4 top-full hidden w-full max-w-[270px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Home</a>
+                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-like">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">About me</a>
+                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-like">About me</a>
                 </li>
                 <li class="group">
-                  <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Portofolio</a>
+                  <a href="#portofolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-like">Portofolio</a>
                 </li>
                 <li class="group">
-                  <a href="#language" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Language</a>
+                  <a href="#language" class="mx-8 flex py-2 text-base text-dark group-hover:text-like">Language</a>
                 </li>
                 <li class="group">
-                  <a href="#galery" class="text-base text-dark py-2 mx-8 flex group-hover:text-like">Galery</a>
+                  <a href="#galery" class="mx-8 flex py-2 text-base text-dark group-hover:text-like">Galery</a>
                 </li>
               </ul>
             </nav>
@@ -51,15 +51,15 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-like md:text-xl">Halo Semua 👌 Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-4xl">Rinka</span></h1>
-            <h2 class="font-medium text-slate-500 first-letter text-lg mb-5 lg:text-2xl">Junior Web Developer | Vocational HighSchool Student</h2>
-            <p class="font-medium text-slate-400 mb-10 leading-relaxed">This is just a Tailwind css,and in this website just bunch of tailwind utilities</p>
-            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="text-base text-white font-semibold bg-like py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition duration-300 ease-in-out">Do Not Click</a>
+            <h1 class="text-base font-semibold text-like md:text-xl">Halo Semua 👌 Saya <span class="mt-1 block text-4xl font-bold text-dark lg:text-4xl">Rinka</span></h1>
+            <h2 class="first-letter mb-5 text-lg font-medium text-slate-500 lg:text-2xl">Junior Web Developer | Vocational HighSchool Student</h2>
+            <p class="mb-10 font-medium leading-relaxed text-slate-400">This is just a Tailwind css,and in this website just bunch of tailwind utilities</p>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="rounded-full bg-like py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-75 hover:shadow-lg">Do Not Click</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-0 lg:right-0">
-              <img src="dist/img/rinka1.png" alt="" class="max-w-full mx-auto" />
-              <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+            <div class="relative mt-10 lg:right-0 lg:mt-0">
+              <img src="dist/img/rinka1.png" alt="" class="mx-auto max-w-full" />
+              <span class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125">
                 <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#FF0066"
@@ -78,17 +78,17 @@
     <section id="about" class="pt-36 pb-32">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-9 lg:w-1/2">
-            <h4 class="font-bold uppercase text-like mb-3">About Me</h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Come Learn Tailwind css</h2>
-            <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe fugiat est magnam dolorum repudiandae tempore.</p>
+          <div class="mb-9 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 font-bold uppercase text-like">About Me</h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl">Come Learn Tailwind css</h2>
+            <p class="max-w-xl text-base font-medium text-slate-500 lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe fugiat est magnam dolorum repudiandae tempore.</p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-9">Social Media</h3>
-            <p class="font-medium text-base text-slate-500 mb-4 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nobis sapiente labore perspiciatis iste dignissimos quasi quas expedita laborum! Expedita?</p>
+            <h3 class="mb-4 text-2xl font-semibold text-dark lg:pt-9 lg:text-3xl">Social Media</h3>
+            <p class="mb-4 text-base font-medium text-slate-500 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nobis sapiente labore perspiciatis iste dignissimos quasi quas expedita laborum! Expedita?</p>
             <div class="flex items-center">
               <!-- github -->
-              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+              <a href="" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-like hover:bg-like hover:text-white">
                 <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -97,7 +97,7 @@
                 </svg>
               </a>
               <!-- instagram -->
-              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+              <a href="" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-like hover:bg-like hover:text-white">
                 <svg width="20" class="fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -106,7 +106,7 @@
                 </svg>
               </a>
               <!-- steam -->
-              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+              <a href="" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-like hover:bg-like hover:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Steam</title>
                   <path
@@ -115,7 +115,7 @@
                 </svg>
               </a>
               <!-- youtube -->
-              <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-like hover:bg-like hover:text-white">
+              <a href="" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-like hover:bg-like hover:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>YouTube</title>
                   <path
@@ -129,43 +129,43 @@
     </section>
     <!-- end -->
     <!-- portofolio -->
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portofolio" class="bg-slate-100 pt-36 pb-16">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-16 text-center">
-            <h4 class="font-semibold text-lg mb-2 text-like">Portofolio</h4>
-            <h2 class="font-semibold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Lastest Project</h2>
-            <p class="font-medium text-md text-slate-400 md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis quod velit molestiae, expedita nemo?</p>
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-like">Portofolio</h4>
+            <h2 class="mb-4 text-3xl font-semibold text-dark sm:text-4xl lg:text-5xl">Lastest Project</h2>
+            <p class="text-md font-medium text-slate-400 md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis quod velit molestiae, expedita nemo?</p>
           </div>
         </div>
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="/dist/img/Screenshot_59.jpg" alt="" width="100%" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha Landing Page</h3>
-            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+            <h3 class="mt-5 mb-5 text-xl font-semibold text-dark">Alfath Izha Landing Page</h3>
+            <p class="text-base font-medium text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="/dist/img/Screenshot_1.jpg" alt="" width="100%" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha Posts Page</h3>
-            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+            <h3 class="mt-5 mb-5 text-xl font-semibold text-dark">Alfath Izha Posts Page</h3>
+            <p class="text-base font-medium text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="/dist/img/Screenshot_2.jpg" alt="" width="100%" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha dashbard page</h3>
-            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+            <h3 class="mt-5 mb-5 text-xl font-semibold text-dark">Alfath Izha dashbard page</h3>
+            <p class="text-base font-medium text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div class="overflow-hidden rounded-md shadow-md">
               <img src="/dist/img/Screenshot_3.jpg" alt="" width="100%" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-5">Alfath Izha single post page</h3>
-            <p class="font-medium text-base text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
+            <h3 class="mt-5 mb-5 text-xl font-semibold text-dark">Alfath Izha single post page</h3>
+            <p class="text-base font-medium text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, reiciendis tenetur? Saepe molestias eveniet blanditiis incidunt suscipit?</p>
           </div>
         </div>
       </div>
@@ -183,16 +183,16 @@
         </div>
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
-            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[80px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/1200px-Laravel.svg.png" alt="" />
             </a>
-            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[80px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/PHP-logo.svg.png" alt="" />
             </a>
-            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[80px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/Unofficial_JavaScript_logo_2.svg.png" alt="" />
             </a>
-            <a href="#" class="max-w-[80px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <a href="#" class="mx-4 max-w-[80px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/Tailwind_CSS_Logo.svg.png" alt="" />
             </a>
           </div>
@@ -201,44 +201,44 @@
     </section>
     <!-- end -->
     <!-- galery -->
-    <section id="galery" class="pt-36 pb-32 bg-slate-300">
+    <section id="galery" class="bg-slate-300 pt-36 pb-32">
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-16 text-center">
-            <h4 class="font-semibold text-lg mb-2 text-like">Galery</h4>
-            <h2 class="font-semibold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Galery</h2>
-            <p class="font-medium text-md text-slate-400 md:text-lg">Lorem ipsum ipsum ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis quod velit molestiae, expedita nemo?</p>
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-like">Galery</h4>
+            <h2 class="mb-4 text-3xl font-semibold text-dark sm:text-4xl lg:text-5xl">Galery</h2>
+            <p class="text-md font-medium text-slate-400 md:text-lg">Lorem ipsum ipsum ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis quod velit molestiae, expedita nemo?</p>
           </div>
         </div>
 
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/1280x720?gaming" alt="" class="w-full" />
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/1280x720?computer" alt="" class="w-full" />
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/1280x720?programming" alt="" class="w-full" />
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/1280x720?web" alt="" class="w-full" />
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/1280x720?cat" alt="" class="w-full" />
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
               <img src="https://source.unsplash.com/1280x720?cartoon" alt="" class="w-full" />
             </div>
           </div>
@@ -250,36 +250,36 @@
     <footer class="bg-dark pt-24 pb-12">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
-            <h2 class="font-bold text-4xl text-white mb-6">Home</h2>
-            <h3 class="font-bold text-2xl mb-2">Contack me</h3>
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/2">
+            <h2 class="mb-6 text-4xl font-bold text-white">Home</h2>
+            <h3 class="mb-2 text-2xl font-bold">Contack me</h3>
             <p>alfathizhaaaaaaa@gmail.com</p>
             <p>JL.Ga Manulang Paldalarang</p>
             <p>Bandung</p>
           </div>
 
-          <div class="w-full px-4 mb-12 md:w-1/2">
-            <h3 class="font-semibold text-xl text-white mb-5">Random Stuff</h3>
+          <div class="mb-12 w-full px-4 md:w-1/2">
+            <h3 class="mb-5 text-xl font-semibold text-white">Random Stuff</h3>
             <ul class="text-slate-300">
               <li>
-                <a href="#" class="inline-block text-base hover:text-like mb-4">Gaming</a>
+                <a href="#" class="mb-4 inline-block text-base hover:text-like">Gaming</a>
               </li>
               <li>
-                <a href="#" class="inline-block text-base hover:text-like mb-4">Coding</a>
+                <a href="#" class="mb-4 inline-block text-base hover:text-like">Coding</a>
               </li>
               <li>
-                <a href="#" class="inline-block text-base hover:text-like mb-4">Anime & Manga</a>
+                <a href="#" class="mb-4 inline-block text-base hover:text-like">Anime & Manga</a>
               </li>
               <li>
-                <a href="#" class="inline-block text-base hover:text-like mb-4">Cats</a>
+                <a href="#" class="mb-4 inline-block text-base hover:text-like">Cats</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="w-full pt-10 border-t border-slate-700"></div>
-        <div class="flex items-center justify-center mb-5">
+        <div class="w-full border-t border-slate-700 pt-10"></div>
+        <div class="mb-5 flex items-center justify-center">
           <!-- github -->
-          <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+          <a href="" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
             <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>GitHub</title>
               <path
@@ -288,7 +288,7 @@
             </svg>
           </a>
           <!-- instagram -->
-          <a href="https://www.instagram.com/person12506/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+          <a href="https://www.instagram.com/person12506/" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
             <svg width="20" class="fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>Instagram</title>
               <path
@@ -297,7 +297,7 @@
             </svg>
           </a>
           <!-- steam -->
-          <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+          <a href="" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>Steam</title>
               <path
@@ -305,7 +305,7 @@
               /></svg></a
           >\
           <!-- youtube -->
-          <a href="" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
+          <a href="" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-like hover:bg-like hover:text-white">
             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>YouTube</title>
               <path
@@ -313,11 +313,16 @@
               /></svg
           ></a>
         </div>
-        <p class="font-medium text-xs text-slate-400 text-center">
+        <p class="text-center text-xs font-medium text-slate-400">
           Create by <a href="https://www.instagram.com/person12506/" class="font-bold text-like">Alfath Izha Barikallah</a>,with <a class="text-bold text-sky-500" href="https://tailwindcss.com" target="_blank">Tailwind Css </a>
         </p>
       </div>
     </footer>
+
+    <!-- back -->
+    <a href="#home" id="op" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center rounded-full bg-like p-4 hover:animate-pulse">
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
     <!-- end -->
     <script src="dist/js/script.js"></script>
   </body>
